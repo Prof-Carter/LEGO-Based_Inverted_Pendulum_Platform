@@ -94,9 +94,8 @@ fprintf('delta1 = %3.2e;\n',delta1)
 sim('sim_arm_pcont')
 
 figure(1)
-movegui('north')
 set(gcf,'Color','white','PaperType','A3')
-set(gcf,'Position',[100 400 900 360]) % [x0 y0 width height]
+set(gcf,'Position',[100 100 900 360]) % [x0 y0 width height]
 subplot('Position',[0.15 0.2 0.8 0.7]) % [left bottom width height]
 
 plot([0 3],[rc rc]*180/pi,'k')

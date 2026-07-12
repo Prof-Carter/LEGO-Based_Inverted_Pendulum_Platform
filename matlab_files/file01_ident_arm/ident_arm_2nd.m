@@ -65,9 +65,8 @@ t_sim = 0:0.001:3;                  % 同定されたパラメータを用いて
 theta1_sim = rc*step(wn^2,[1 2*zeta*wn wn^2],t_sim);
 
 figure(1)
-movegui('north')
 set(gcf,'Color','white','PaperType','A3')
-set(gcf,'Position',[100 400 900 360]) % [x0 y0 width height]
+set(gcf,'Position',[100 100 900 360]) % [x0 y0 width height]
 subplot('Position',[0.15 0.2 0.8 0.7]) % [left bottom width height]
 
 plot([Tp Tp],[0 theta1_max]*180/pi,'k')
